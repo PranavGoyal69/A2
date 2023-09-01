@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Concepts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .output {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="output">
+    <h2>JavaScript Concepts</h2>
+    <script>
+      function runCode() {
+        // String methods
+        var text = "Hello, World!";
+        document.write("<p>String length: " + text.length + "</p>");
+        document.write("<p>Uppercase: " + text.toUpperCase() + "</p>");
+        document.write("<p>Substring: " + text.substring(0, 5) + "</p>");
+        document.write("<p>Index of 'World': " + text.indexOf("World") + "</p>");
+        document.write("<p>Replace: " + text.replace("Hello", "Hi") + "</p>");
+
+        // Number methods
+        var num = 42.5678;
+        document.write("<p>Fixed to 2 decimal places: " + num.toFixed(2) + "</p>");
+        document.write("<p>Is an integer: " + Number.isInteger(num) + "</p>");
+        document.write("<p>Rounded to nearest integer: " + Math.round(num) + "</p>");
+        document.write("<p>Maximum value: " + Math.max(10, 20, 5) + "</p>");
+        document.write("<p>Square root of 64: " + Math.sqrt(64) + "</p>");
+
+        // Array methods
+        var arr = [3, 1, 7, 5, 2];
+        document.write("<p>Joined array elements: " + arr.join(", ") + "</p>");
+        document.write("<p>Includes 5: " + arr.includes(5) + "</p>");
+        document.write("<p>Pushed 9: " + arr.push(9) + "</p>");
+        document.write("<p>Popped element: " + arr.pop() + "</p>");
+        document.write("<p>Sorted array: " + arr.sort() + "</p>");
+
+        // Date methods
+        let currentDate = new Date();
+        document.write("<p>Current month: " + (currentDate.getMonth() + 1) + "</p>");
+        document.write("<p>Current year: " + currentDate.getFullYear() + "</p>");
+        document.write("<p>Current day of the month: " + currentDate.getDate() + "</p>");
+        document.write("<p>Current hour: " + currentDate.getHours() + "</p>");
+        document.write("<p>Current minutes: " + currentDate.getMinutes() + "</p>");
+
+        // Function methods
+        function greet(name) {
+          document.write("<p>Hello, " + name + "!</p>");
+        }
+        var greetFunction = greet;
+        greetFunction("Alice");
+      }
+
+      // Call the runCode function when the page loads
+      runCode();
+    </script>
+  </div>
+</body>
+</html>

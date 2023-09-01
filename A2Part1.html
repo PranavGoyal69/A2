@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web App Example</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: green;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .Image img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid blue;
+        }
+
+        .left, .right {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .left h2, .right h2 {
+            background-color: white;
+            color: red;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .main-body {
+            clear: both;
+            padding: 20px;
+        }
+
+        .body-header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .body-subheader {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Example of Responsive Web Apps</h1>
+    </header>
+
+    <div class="Image">
+        <img src="https://brolik.com/blog/wp-content/uploads/2013/05/BRO_ResponsiveDesign_Main2.png" alt="Hello">
+    </div>
+    
+    <div class="left">
+        <h2>This is an example of H2 on the left</h2>
+    </div>
+    
+    <div class="right">
+        <h2>This is an example of H2 on the right</h2>
+    </div>
+    
+    <div class="main-body">
+        <div class="body-header">Responsive Text</div>
+        <div class="body-subheader">
+            Responsive web design ensures that the web page looks great, regardless of screen size.
+        </div>
+    </div>
+</body>
+</html>
